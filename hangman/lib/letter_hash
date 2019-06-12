@@ -1,0 +1,32 @@
+
+[1mFrom:[0m /home/meow/Desktop/submit/old_attempts/hangman_02/lib/hangman.rb @ line 192 ComputerPlayer#guess:
+
+    [1;34m178[0m: [32mdef[0m [1;34mguess[0m(board)
+    [1;34m179[0m:   [1;34m# need handle input if no candidate_words match letter idxs[0m
+    [1;34m180[0m:   [1;34m#candidate_words should take input and narrow down UNLESS input doesn't help narrow down[0m
+    [1;34m181[0m:   [1;34m# if new input doesn't narrow down candidate_words, puts "sorry I don't know that word" and break[0m
+    [1;34m182[0m: 
+    [1;34m183[0m:   letter_hash = [1;34;4mHash[0m.new([1;34m0[0m)
+    [1;34m184[0m: 
+    [1;34m185[0m:   @candidate_words.each [32mdo[0m |word|
+    [1;34m186[0m:     word.chars.each [32mdo[0m |letter|
+    [1;34m187[0m:       letter_hash[letter] += [1;34m1[0m
+    [1;34m188[0m:     [32mend[0m
+    [1;34m189[0m:   [32mend[0m
+    [1;34m190[0m: 
+    [1;34m191[0m:   board.each [32mdo[0m |ele|
+ => [1;34m192[0m:     binding.pry
+    [1;34m193[0m:     [32mif[0m letter_hash.has_key?(ele)
+    [1;34m194[0m:       letter_hash.delete(ele)
+    [1;34m195[0m:     [32mend[0m
+    [1;34m196[0m:   [32mend[0m
+    [1;34m197[0m: 
+    [1;34m198[0m:   letter_hash.sort_by{|k,v| v}.reverse[[1;34m0[0m][[1;34m0[0m]
+    [1;34m199[0m: 
+    [1;34m200[0m:   [1;34m# if letter_hash.empty?[0m
+    [1;34m201[0m:   [1;34m#   p "kashdkjgadfkehhdh"[0m
+    [1;34m202[0m:   [1;34m# else[0m
+    [1;34m203[0m:   [1;34m#   letter_hash.sort_by{|k,v| v}.reverse[0][0][0m
+    [1;34m204[0m:   [1;34m# end[0m
+    [1;34m205[0m: [32mend[0m
+

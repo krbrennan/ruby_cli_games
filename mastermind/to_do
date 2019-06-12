@@ -1,0 +1,6 @@
+[DONE] I still need to adjust the near & exact matches method.
+[DONE] near matches still includes the exact matches.
+[DONE] need to write a conditional to reduce near by exact
+
+[DONE] add a prompt at the beginning of each turn letting player know how many guesses they have left (10 MAX)
+[DONE] parse needs to be able to handle incorrect input

@@ -1,0 +1,8 @@
+
+
+[DONE]  the human_player class needs a better method of displaying the board
+
+[DONE]  there's something amiss in the logic of the game. Occasionally when I win
+it'll say "GG, computer wins!" so it's not consistently recognizing whose turn it is.
+I think that maybe it's occasionally switching players after I win?
+I'm not sure but it needs tweaking.

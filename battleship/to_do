@@ -1,0 +1,10 @@
+specs pass
+
+need to attempt bonus
+
+I have the game set to initialize a 10x10 board then prior to playing the game
+(at the bottom of battleship.rb) I have the board place 10 random ships
+    -Doing it the way that I did prohibits one from initializing a board
+    of your choosing(size-wise)
+    -So if Board.new is passed an optional size&&board-pieces it will probably
+    throw an error b/c I don't have the prog set up to handle that.
